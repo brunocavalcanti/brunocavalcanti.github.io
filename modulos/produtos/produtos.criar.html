@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <form  class="form-group" name="cadastroProduto" ng-submit=salvar(produto)>
+       <div class="card">
+          <label for="">Código:</label>
+          <input type="text" placeholder="código" ng-model="produto.codigo">
+          <label for="">Nome:</label>
+          <input type="text" placeholder="nome" ng-model="produto.nome">
+          <label for="">Preço:</label>
+          <input type="text" placeholder="preço"ng-model="produto.preco">
+          <label for="">Estoque:</label>
+          <input type="text" placeholder="estoque" ng-model="produto.estoque">
+          <button type="submit" class="btn btn-success">Cadastrar </button>
+        </div>
+     </form>
+  </div>
+     
+</div>

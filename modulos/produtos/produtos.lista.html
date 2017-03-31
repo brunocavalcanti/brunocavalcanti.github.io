@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+         <th>Código</th>
+    <th>Nome</th> 
+    <th>Preço</th>
+    <th>Estoque</th>
+          </tr>
+        </thead>
+        <tbody>
+              <tr ng-repeat="produto in produtos track by $index">
+    <td>{{produto.codigo}}</td>
+    <td>{{produto.nome}}</td>
+    <td>{{produto.preco}}</td>    
+    <td>{{produto.estoque}}</td>
+          <td>
+            <button type="button" class="btn btn-success" ng-click="editar(produto)">Editar</button>
+            <button type="button" class="btn btn-danger" ng-click="apagarProduto(produto)">Remover</button>
+            </td>
+        </tbody>
+      </table>
+    </div>
+</div>
